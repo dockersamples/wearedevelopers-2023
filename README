@@ -1,0 +1,26 @@
+# Todo list application
+
+This repo provides a simple todo application, based on a Node backend and a React frontend.
+
+**NOTE:** This application/repo was developed specifically for the 2023 WeAreDevelopers conference. This repo will _not_ be maintained. You can use the tags in the repo to navigate through the samples.
+
+## Development
+
+Install the following components in order to start development.
+
+1. Install Node and `npm`
+1. Install MySQL and ensure it's running
+1. In both the `client/` and `api/` directories, run `npm install`
+1. In the `api/` directory, create a `.env` file with the following contents:
+
+    ```
+    MYSQL_HOST=localhost
+    MYSQL_USER=root
+    MYSQL_PASSWORD=<your-root-user-password>
+    MYSQL_DB=<your-database-user>
+    ``` 
+
+1. In the `client/` directory, run `npm start` to start the frontend
+1. In the `api/` directory, run `npm run dev` to start the backend
+
+Open your browser to http://localhost:3000 to view the frontend. The backend will be running on http://localhost:3030.
