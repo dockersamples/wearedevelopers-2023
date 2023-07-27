@@ -8,19 +8,7 @@ This repo provides a simple todo application, based on a Node backend and a Reac
 
 Install the following components in order to start development.
 
-1. Install Node and `npm`
-1. Install MySQL and ensure it's running
-1. In both the `client/` and `api/` directories, run `npm install`
-1. In the `api/` directory, create a `.env` file with the following contents:
-
-    ```
-    MYSQL_HOST=localhost
-    MYSQL_USER=root
-    MYSQL_PASSWORD=<your-root-user-password>
-    MYSQL_DB=<your-database-user>
-    ``` 
-
-1. In the `client/` directory, run `npm start` to start the frontend
-1. In the `api/` directory, run `npm run dev` to start the backend
+1. Install Docker Desktop (if you don't have it yet)
+1. Use Docker Compose to launch the application using `docker compose up -d`.
 
 Open your browser to http://localhost:3000 to view the frontend. The backend will be running on http://localhost:3030.
