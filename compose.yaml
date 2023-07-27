@@ -34,10 +34,15 @@ services:
   client:
     build:
       context: ./client
-      target: dev
-    volumes:
-      - ./client:/usr/src/app
+      target: dev-watch
     ports:
       - 3000:3000
+    x-develop:
+      watch:
+        - path: ./client/package-lock.json
+          action: rebuild
+        - path: ./client/src
+          action: sync
+          target: /usr/src/app/src
 volumes:
   mysql-data:
