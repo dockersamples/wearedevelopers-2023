@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { AddItemForm } from "./AddItemForm.";
+import { AddItemForm } from "./AddItemForm";
 import { ItemDisplay } from "./ItemDisplay";
 
 export function TodoListCard() {
